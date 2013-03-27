@@ -23,7 +23,7 @@
 		});
 	}
 
-	var UPDATE_INTERVAL = 1000 * 60 * 5;
+	var UPDATE_INTERVAL = 1000 * 60;
 
 	setInterval( update, UPDATE_INTERVAL );
 
