@@ -1,7 +1,7 @@
 {
 	"name": "OSChina Notifier",
 	"description": "Displays your OSChina notifications unread count",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"background": {
 		"scripts": [
 			"api.js",

@@ -19,8 +19,9 @@
 		var NOTIFICATIONS_URL = 'http://www.oschina.net/';
 		xhr( 'GET', NOTIFICATIONS_URL, function( data ) {
 			if(data != ""){
-				var index = data.indexOf("total_count");
-				callback( index == -1 ? "" : data.substring(index+12,index+13));
+				var reg = /total_count:([0-9]*)/;
+				var result = reg.exec(data);
+				callback(result[1]);
 			}else{
 				callback(false);
 			}
