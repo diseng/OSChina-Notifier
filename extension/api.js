@@ -21,7 +21,7 @@
 			if(data != ""){
 				var reg = /total_count:([0-9]*)/;
 				var result = reg.exec(data);
-				callback(result[1]);
+				result == null ? callback('') : callback(result[1]);
 			}else{
 				callback(false);
 			}
